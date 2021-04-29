@@ -1,0 +1,13 @@
+.a{
+color: black;
+display: block;
+font-size: 25px;
+margin-left:40%;
+
+}  
+.a:hover{
+    color: goldenrod;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}

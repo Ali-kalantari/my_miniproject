@@ -1,0 +1,28 @@
+.builder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 0;
+  }
+  
+  .builder button {
+    display: block;
+    font: inherit;
+    padding: 5px;
+    margin: 0 12px;
+    width: 80px;
+    background: #281eb9;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+  }
+  .builder button:hover {
+cursor: pointer;  }
+
+  
+  .builder div {
+    color: #8e24aa;
+    margin: 0 12px;
+  }
+  
