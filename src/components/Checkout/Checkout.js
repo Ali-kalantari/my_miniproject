@@ -19,6 +19,7 @@ const Checkout = () => {
   const Getitem = async () => {
     const data = await fetch("https://jsonplaceholder.typicode.com/users");
     const items = await data.json();
+    console.log(items)
     setitems(items);
   };
 
@@ -58,12 +59,11 @@ const Checkout = () => {
         <br />
       {items.map((item ,index)=>{
             return(
-                <Link  className='a' key={index} to={`/user/${item.id}/${item.name}`}> {item.name}</Link>
+                <Link  className='a' key={index} to={`/user/${item.id}/${item.name}/${item.email}/${item.company.name}`}> {item.name}</Link>
             )
-
         })}
       </div>
-      <button onClick={handleclick}> to aaa</button>
+      <button onClick={handleclick}> to account</button>
     </>
   );
 };

@@ -26,7 +26,7 @@ function App() {
         <Route path="/check"  component={Checkout}/>
         <Route path='/account' component={Login} />
         <Route path='/counter' component={Counter} />
-        <Route path='/user/:id/:name' component={User} />
+        <Route path='/user/:id/:name/:email/:company' component={User} />
         <Route path='/not-found' component={Notfound} />
         <Redirect to='/not-found' />
       </Switch>
